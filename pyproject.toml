@@ -1,19 +1,17 @@
 [build-system]
-requires = ["scikit-build-core", "pybind11", "setuptools-git-versioning"]
-build-backend = "scikit_build_core.build"
+requires = ["setuptools>=61.0", "pybind11", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
 
 [tool.setuptools-git-versioning]
-template = "{tag}"
-dev_template = "{tag}.post{ccount}+git.{sha}"
-dirty_template = "{tag}.post{ccount}+git.{sha}.dirty"
+enabled=true
 
 [project]
-name = "cholsky_update"
+name = "py_eigen"
 dynamic = ["version"]
 authors = [
   { name="Chris MacLellan", email="cmaclell@gatech.edu" },
 ]
-description = "Wrapper around eigen's cholsky operations for numpy arrays"
+description = "Minimal wrapper around eigen's c++ interface for numpy arrays"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -25,5 +23,5 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/cmaclell/cholsky_update"
+Homepage = "https://github.com/cmaclell/py_eigen"
 
