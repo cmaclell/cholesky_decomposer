@@ -10,8 +10,8 @@ EIGEN_INCLUDE_PATH = '/opt/homebrew/include/eigen3/'
 # Use Pybind11Extension instead of intree_extensions for better control
 ext_modules = [
     Pybind11Extension(
-        name="py_eigen",
-        sources=glob('py_eigen.cpp'),
+        name="cholesky_decomposer",
+        sources=glob('cholesky_decomposer.cpp'),
         include_dirs=[EIGEN_INCLUDE_PATH]  # Add include directories here
     )
 ]

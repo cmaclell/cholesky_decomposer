@@ -6,12 +6,12 @@ build-backend = "setuptools.build_meta"
 enabled=true
 
 [project]
-name = "py_eigen"
+name = "cholesky_decomposer"
 dynamic = ["version"]
 authors = [
   { name="Chris MacLellan", email="cmaclell@gatech.edu" },
 ]
-description = "Minimal wrapper around eigen's c++ interface for numpy arrays"
+description = "A light weight wrapper around the C++ eigen's library for efficient cholesky decomposition over numpy arrays."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -23,5 +23,5 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/cmaclell/py_eigen"
+Homepage = "https://github.com/cmaclell/cholesky_decomposer"
 

@@ -1,2 +1,3 @@
-# cholsky-update
-Wrapper around eigen's cholsky operations for numpy arrays
+# cholesky\_decomposer 
+
+A light weight wrapper around the C++ eigen's library for efficient cholesky decomposition over numpy arrays
