@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel", "pybind11", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[project]
+name = "cholsky_update"
+dynamic = ["version"]
+authors = [
+  { name="Chris MacLellan", email="cmaclell@gatech.edu" },
+]
+description = "Wrapper around eigen's cholsky operations for numpy arrays"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://github.com/cmaclell/cholsky_update"
+
