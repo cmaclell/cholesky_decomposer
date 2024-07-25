@@ -1,9 +1,11 @@
 [build-system]
-requires = ["setuptools", "wheel", "pybind11", "setuptools-git-versioning"]
-build-backend = "setuptools.build_meta"
+requires = ["scikit-build-core", "pybind11", "setuptools-git-versioning"]
+build-backend = "scikit_build_core.build"
 
 [tool.setuptools-git-versioning]
-enabled = true
+template = "{tag}"
+dev_template = "{tag}.post{ccount}+git.{sha}"
+dirty_template = "{tag}.post{ccount}+git.{sha}.dirty"
 
 [project]
 name = "cholsky_update"
