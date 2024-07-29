@@ -1,13 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0", "pybind11", "setuptools-git-versioning"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools-git-versioning]
-enabled=true
+requires = ["scikit-build-core", "pybind11"]
+build-backend = "scikit_build_core.build"
 
 [project]
 name = "cholesky_decomposer"
-dynamic = ["version"]
+version = "0.0.1"
 authors = [
   { name="Chris MacLellan", email="cmaclell@gatech.edu" },
 ]
